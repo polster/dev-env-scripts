@@ -29,13 +29,12 @@ brew install python
 # Intstall robot framework
 pip install robotframework
 
-# Install selenium2lib for web testing
-pip install robotframework-selenium2library
-
 # Install additional libraries
 pip install robotframework-sshlibrary
 pip install robotframework-requests
+pip install robotframework-selenium2library
+pip install robotframework-extendedselenium2library
 
-# Install chrome and web driver
+# Install chrome and web driver for local dev
 brew cask install google-chrome
 brew install chromedriver
