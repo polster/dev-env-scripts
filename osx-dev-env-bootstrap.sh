@@ -84,6 +84,9 @@ else
 	echo ""
 fi
 
+echo "Make sure /usr/local is writable by the current user"
+sudo chown $(whoami):admin /usr/local && sudo chown -R $(whoami):admin /usr/local
+
 echo "Ansible installation"
 echo "--------------------"
 echo ""
