@@ -35,6 +35,7 @@ fi
 ln -s $target_backup_dir $latest_backup_dir
 
 # perform backup
+rclone copy --log-file $BACKUP_DIR_BASE/logs/rclone_$CURRENT_TIMESTAMP.log gdrive-remote: $target_backup_dir/
 
 if [ $? -eq 0 ]; then
   message+="\nBackup was successful"
